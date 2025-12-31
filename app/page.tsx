@@ -43,7 +43,7 @@ const galleryImages = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-transparent">
       {/* Navigation */}
       <Navbar />
 
@@ -63,7 +63,7 @@ export default function Home() {
       />
 
       {/* Featured Products Section */}
-      <section id="shop" className="py-24 px-6 bg-black">
+      <section id="shop" className="py-24 px-6 bg-transparent">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
           <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16">
@@ -111,7 +111,7 @@ export default function Home() {
       />
 
       {/* About Section */}
-      <section id="about" className="py-32 px-6 bg-black relative overflow-hidden">
+      <section id="about" className="py-32 px-6 bg-transparent relative overflow-hidden">
         {/* Subtle diagonal light trails */}
         <div className="light-trail top-1/3 left-0 w-full opacity-10" />
         <div className="light-trail top-2/3 left-0 w-full opacity-5" />
@@ -139,9 +139,9 @@ export default function Home() {
       <Gallery images={galleryImages} />
 
       {/* Final CTA Section */}
-      <section className="py-24 px-6 bg-black border-t border-white/5">
+      <section className="py-24 px-6 bg-transparent border-t border-white/5">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="font-display text-4xl md:text-6xl tracking-wide text-chrome mb-6">
+          <h2 className="font-display text-4xl md:text-6xl tracking-wide text-white mb-6">
             Join The Movement
           </h2>
           <p className="text-gray-500 mb-10">

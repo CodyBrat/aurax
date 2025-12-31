@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
     return (
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-transparent">
             {/* Subtle light trails */}
             <div className="light-trail top-1/4 -left-1/4 opacity-20" />
             <div className="light-trail top-1/2 -left-1/4 opacity-10" />

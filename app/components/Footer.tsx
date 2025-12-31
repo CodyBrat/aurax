@@ -13,7 +13,7 @@ const Footer = () => {
     ];
 
     return (
-        <footer id="contact" className="bg-black border-t border-white/10">
+        <footer id="contact" className="bg-black/40 border-t border-white/10">
             {/* Main Footer Content */}
             <div className="max-w-7xl mx-auto px-6 py-16">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12">

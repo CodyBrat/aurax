@@ -56,7 +56,7 @@ html {
 }
 
 body {
-  background: var(--black);
+  background: transparent;
   color: var(--white);
   font-family: var(--font-exorcista), 'Times New Roman', serif;
   margin: 0;
