@@ -39,8 +39,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
-  --font-display: var(--font-bebas-neue);
-  --font-exorcista: var(--font-exorcista);
+  --font-display: var(--font-mirage);
 }
 
 /* ========================================
@@ -58,10 +57,22 @@ html {
 body {
   background: transparent;
   color: var(--white);
-  font-family: var(--font-exorcista), 'Times New Roman', serif;
+  font-family: var(--font-mirage), 'Times New Roman', serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .font-display {
+    font-family: var(--font-mirage), sans-serif;
+  }
 }
 
 /* Selection styling */
@@ -74,13 +85,7 @@ body {
    Typography
    ======================================== */
 
-.font-display {
-  font-family: var(--font-exorcista), 'Times New Roman', serif;
-}
 
-.font-exorcista {
-  font-family: var(--font-exorcista), 'Times New Roman', serif;
-}
 
 .text-chrome {
   background: linear-gradient(180deg, var(--chrome-light) 0%, var(--chrome-mid) 50%, var(--chrome-dark) 100%);

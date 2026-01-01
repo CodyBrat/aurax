@@ -16,9 +16,9 @@ const bebasNeue = Bebas_Neue({
   display: "swap",
 });
 
-const exorcista = localFont({
-  src: "../public/Exorcista_-Jed_40.ttf",
-  variable: "--font-exorcista",
+const mirage = localFont({
+  src: "../public/Mirage final.ttf",
+  variable: "--font-mirage",
   display: "swap",
 });
 
@@ -36,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${bebasNeue.variable} ${exorcista.variable} antialiased text-white`}
+        className={`${inter.variable} ${bebasNeue.variable} ${mirage.variable} antialiased text-white`}
         suppressHydrationWarning
       >
         {/* Fixed Video Background */}
