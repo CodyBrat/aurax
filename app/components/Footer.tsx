@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import CurrencySelector from "./CurrencySelector";
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -97,12 +98,7 @@ const Footer = () => {
                     {/* Country/Region */}
                     <div className="flex items-center gap-2 text-gray-500 text-sm">
                         <span>Country/Region:</span>
-                        <button className="flex items-center gap-1 text-white hover:text-gray-300 transition-colors">
-                            United States | USD $
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                                <path d="m6 9 6 6 6-6"></path>
-                            </svg>
-                        </button>
+                        <CurrencySelector />
                     </div>
 
                     {/* Payment Methods */}

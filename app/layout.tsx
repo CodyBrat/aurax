@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Bebas_Neue } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import { CurrencyProvider } from "./context/CurrencyContext";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -34,27 +35,32 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
+    <html lang="en" className="dark bg-black" suppressHydrationWarning>
       <body
         className={`${inter.variable} ${bebasNeue.variable} ${mirage.variable} antialiased text-white`}
         suppressHydrationWarning
       >
-        {/* Fixed Video Background */}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="fixed inset-0 w-full h-full object-cover -z-20"
-        >
-          <source src="/video.mp4" type="video/mp4" />
-        </video>
-        {/* Dark overlay for readability */}
-        <div className="fixed inset-0 bg-black/60 -z-10" />
+        <CurrencyProvider>
+          {/* Fixed Video Background */}
+          <div className="fixed inset-0 w-full h-full z-[-1] overflow-hidden bg-black">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="absolute min-w-full min-h-full object-cover opacity-60"
+            >
+              <source src="/video.mp4" type="video/mp4" />
+            </video>
+            {/* Dark Overlay */}
+            <div className="absolute inset-0 bg-black/60" />
 
-        {/* Noise texture overlay for subtle grain effect */}
-        <div className="noise-overlay" aria-hidden="true"></div>
-        {children}
+            {/* Noise Overlay */}
+            <div className="noise-overlay" />
+          </div>
+
+          {children}
+        </CurrencyProvider>
       </body>
     </html>
   );

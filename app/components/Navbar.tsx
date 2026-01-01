@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import CurrencySelector from "./CurrencySelector";
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,10 +34,7 @@ const Navbar = () => {
                 {/* Right Section - Currency & Icons */}
                 <div className="hidden md:flex items-center gap-6">
                     {/* Currency Selector */}
-                    <div className="flex items-center gap-2 text-sm text-gray-400">
-                        <span>USD</span>
-                        <span className="text-gray-600">$</span>
-                    </div>
+                    <CurrencySelector />
 
                     {/* Search Icon */}
                     <button className="p-2 text-gray-300 hover:text-white transition-colors" aria-label="Search">

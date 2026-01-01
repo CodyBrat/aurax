@@ -5,46 +5,46 @@ import ProductCard from "../components/ProductCard";
 const products = [
     {
         name: "Oversized Gothic Hoodie | Limited",
-        price: "$89.99 USD",
+        price: 89.99,
         image: "/hoodie.png",
         badge: "Limited",
     },
     {
         name: "Washed Black Tee | Essential",
-        price: "$49.99 USD",
+        price: 49.99,
         image: "/tshirt.png",
     },
     {
         name: "Cargo Military Jacket",
-        price: "$149.99 USD",
+        price: 149.99,
         image: "/jacket.png",
         badge: "New",
     },
     {
         name: "Gothic Logo Cap",
-        price: "$34.99 USD",
+        price: 34.99,
         image: "/cap.png",
     },
     // Duplicates for demo purposes to fill the grid
     {
         name: "Distressed Denim Jacket",
-        price: "$129.99 USD",
+        price: 129.99,
         image: "/jacket.png",
         badge: "Coming Soon",
     },
     {
         name: "Cyber Punk Cargo Pants",
-        price: "$99.99 USD",
+        price: 99.99,
         image: "/hoodie.png", // Placeholder
     },
     {
         name: "Metal Hardware Belt",
-        price: "$44.99 USD",
+        price: 44.99,
         image: "/tshirt.png", // Placeholder
     },
     {
         name: "Combat Boots | Leather",
-        price: "$189.99 USD",
+        price: 189.99,
         image: "/cap.png", // Placeholder
     }
 ];

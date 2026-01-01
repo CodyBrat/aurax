@@ -1,9 +1,11 @@
-import React from "react";
+"use client";
+
+import { useCurrency } from "../context/CurrencyContext";
 import Image from "next/image";
 
 interface ProductCardProps {
     name: string;
-    price: string;
+    price: number; // Changed to number for calculation
     image: string;
     badge?: string;
     href?: string;
@@ -16,6 +18,9 @@ const ProductCard = ({
     badge,
     href = "#"
 }: ProductCardProps) => {
+    const { formatPrice } = useCurrency();
+    const formattedPrice = formatPrice(price);
+
     return (
         <a href={href} className="group product-card block">
             {/* Image Container */}
@@ -46,7 +51,7 @@ const ProductCard = ({
                     {name}
                 </h3>
                 <p className="text-sm text-white font-medium">
-                    {price}
+                    {formattedPrice}
                 </p>
             </div>
         </a>

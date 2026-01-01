@@ -10,24 +10,24 @@ import Footer from "./components/Footer";
 const featuredProducts = [
   {
     name: "Oversized Gothic Hoodie | Limited",
-    price: "$89.99 USD",
+    price: 89.99,
     image: "/hoodie.png",
     badge: "Limited",
   },
   {
     name: "Washed Black Tee | Essential",
-    price: "$49.99 USD",
+    price: 49.99,
     image: "/tshirt.png",
   },
   {
     name: "Cargo Military Jacket",
-    price: "$149.99 USD",
+    price: 149.99,
     image: "/jacket.png",
     badge: "New",
   },
   {
     name: "Gothic Logo Cap",
-    price: "$34.99 USD",
+    price: 34.99,
     image: "/cap.png",
   },
 ];
