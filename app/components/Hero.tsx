@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Hero = () => {
     return (
@@ -27,12 +28,12 @@ const Hero = () => {
 
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="#shop" className="btn-primary min-w-[180px]">
+                    <Link href="/shop" className="btn-primary min-w-[180px]">
                         Shop Now
-                    </a>
-                    <a href="#gallery" className="btn-outline min-w-[180px]">
+                    </Link>
+                    <Link href="/gallery" className="btn-outline min-w-[180px]">
                         View Gallery
-                    </a>
+                    </Link>
                 </div>
             </div>
 

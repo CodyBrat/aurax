@@ -16,18 +16,18 @@ const Navbar = () => {
 
                 {/* Desktop Navigation */}
                 <div className="hidden md:flex items-center gap-10">
-                    <a href="#shop" className="text-sm tracking-wide text-gray-300 hover:text-white transition-colors uppercase">
+                    <Link href="/shop" className="text-sm tracking-wide text-gray-300 hover:text-white transition-colors uppercase">
                         Shop
-                    </a>
-                    <a href="#about" className="text-sm tracking-wide text-gray-300 hover:text-white transition-colors uppercase">
+                    </Link>
+                    <Link href="/about" className="text-sm tracking-wide text-gray-300 hover:text-white transition-colors uppercase">
                         About
-                    </a>
-                    <a href="#gallery" className="text-sm tracking-wide text-gray-300 hover:text-white transition-colors uppercase">
+                    </Link>
+                    <Link href="/gallery" className="text-sm tracking-wide text-gray-300 hover:text-white transition-colors uppercase">
                         Gallery
-                    </a>
-                    <a href="#contact" className="text-sm tracking-wide text-gray-300 hover:text-white transition-colors uppercase">
+                    </Link>
+                    <Link href="/contact" className="text-sm tracking-wide text-gray-300 hover:text-white transition-colors uppercase">
                         Contact
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Right Section - Currency & Icons */}
@@ -94,18 +94,18 @@ const Navbar = () => {
             {isMenuOpen && (
                 <div className="md:hidden bg-black border-t border-white/5">
                     <div className="flex flex-col py-6 px-6 gap-4">
-                        <a href="#shop" className="text-lg tracking-wide text-gray-300 hover:text-white transition-colors uppercase py-2">
+                        <Link href="/shop" className="text-lg tracking-wide text-gray-300 hover:text-white transition-colors uppercase py-2">
                             Shop
-                        </a>
-                        <a href="#about" className="text-lg tracking-wide text-gray-300 hover:text-white transition-colors uppercase py-2">
+                        </Link>
+                        <Link href="/about" className="text-lg tracking-wide text-gray-300 hover:text-white transition-colors uppercase py-2">
                             About
-                        </a>
-                        <a href="#gallery" className="text-lg tracking-wide text-gray-300 hover:text-white transition-colors uppercase py-2">
+                        </Link>
+                        <Link href="/gallery" className="text-lg tracking-wide text-gray-300 hover:text-white transition-colors uppercase py-2">
                             Gallery
-                        </a>
-                        <a href="#contact" className="text-lg tracking-wide text-gray-300 hover:text-white transition-colors uppercase py-2">
+                        </Link>
+                        <Link href="/contact" className="text-lg tracking-wide text-gray-300 hover:text-white transition-colors uppercase py-2">
                             Contact
-                        </a>
+                        </Link>
                         <div className="flex items-center gap-6 pt-4 border-t border-white/10">
                             <button className="p-2 text-gray-300 hover:text-white transition-colors" aria-label="Search">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">

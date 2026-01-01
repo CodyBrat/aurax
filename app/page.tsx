@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Marquee from "./components/Marquee";
@@ -75,12 +76,12 @@ export default function Home() {
                 New Arrivals
               </h2>
             </div>
-            <a
-              href="#"
+            <Link
+              href="/shop"
               className="mt-6 md:mt-0 text-sm uppercase tracking-wide text-gray-400 hover:text-white transition-colors border-b border-gray-600 hover:border-white pb-1"
             >
               View All Products →
-            </a>
+            </Link>
           </div>
 
           {/* Products Grid */}

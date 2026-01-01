@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -49,7 +50,7 @@ const Footer = () => {
                     <div>
                         <h4 className="text-sm uppercase tracking-ultra text-white mb-6">Shop</h4>
                         <ul className="space-y-3">
-                            <li><a href="#" className="text-gray-500 hover:text-white transition-colors text-sm">All Products</a></li>
+                            <li><Link href="/shop" className="text-gray-500 hover:text-white transition-colors text-sm">All Products</Link></li>
                             <li><a href="#" className="text-gray-500 hover:text-white transition-colors text-sm">Hoodies</a></li>
                             <li><a href="#" className="text-gray-500 hover:text-white transition-colors text-sm">T-Shirts</a></li>
                             <li><a href="#" className="text-gray-500 hover:text-white transition-colors text-sm">Accessories</a></li>
@@ -61,11 +62,11 @@ const Footer = () => {
                     <div>
                         <h4 className="text-sm uppercase tracking-ultra text-white mb-6">Info</h4>
                         <ul className="space-y-3">
-                            <li><a href="#" className="text-gray-500 hover:text-white transition-colors text-sm">About Us</a></li>
+                            <li><Link href="/about" className="text-gray-500 hover:text-white transition-colors text-sm">About Us</Link></li>
                             <li><a href="#" className="text-gray-500 hover:text-white transition-colors text-sm">Shipping</a></li>
                             <li><a href="#" className="text-gray-500 hover:text-white transition-colors text-sm">Returns</a></li>
                             <li><a href="#" className="text-gray-500 hover:text-white transition-colors text-sm">Size Guide</a></li>
-                            <li><a href="#" className="text-gray-500 hover:text-white transition-colors text-sm">Contact</a></li>
+                            <li><Link href="/contact" className="text-gray-500 hover:text-white transition-colors text-sm">Contact</Link></li>
                         </ul>
                     </div>
 
